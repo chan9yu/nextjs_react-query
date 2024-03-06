@@ -1,0 +1,15 @@
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		/** Bundler Options */
+		"moduleResolution": "bundler",
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+
+		/** TypeScript Plugins */
+		"plugins": [{ "name": "next" }]
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+	"exclude": ["node_modules"]
+}

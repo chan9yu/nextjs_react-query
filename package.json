@@ -1,0 +1,61 @@
+{
+	"name": "nextjs_react-query",
+	"private": true,
+	"version": "0.0.1",
+	"description": "⚡ Next.js app router with react-query",
+	"author": "chan9yu <wry5533@gmail.com>",
+	"packageManager": "pnpm@8.15.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chan9yu/nextjs_react-query"
+	},
+	"lint-staged": {
+		"**/*.{ts,tsx}": [
+			"eslint --fix",
+			"prettier --write"
+		]
+	},
+	"config": {
+		"cz-customizable": {
+			"config": "./config/cz-config.js"
+		}
+	},
+	"scripts": {
+		"dev": "next dev -p 8080",
+		"build": "next build",
+		"start": "next start -p 8080",
+		"lint": "next lint",
+		"commit": "./node_modules/cz-customizable/standalone.js",
+		"prepare": "husky install",
+		"husky:permission": "chmod +x .husky/*"
+	},
+	"dependencies": {
+		"next": "14.0.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^18.4.3",
+		"@commitlint/config-conventional": "^18.4.3",
+		"@types/node": "^20.0.0",
+		"@types/react": "^18.2.38",
+		"@types/react-dom": "^18.0.0",
+		"@typescript-eslint/eslint-plugin": "^6.12.0",
+		"@typescript-eslint/parser": "^6.12.0",
+		"commitizen": "^4.3.0",
+		"cz-customizable": "6.3.0",
+		"eslint": "^8.0.0",
+		"eslint-config-next": "14.0.3",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-config-react-app": "^7.0.1",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-jsx-a11y": "^6.8.0",
+		"eslint-plugin-prettier": "^5.0.1",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.1.0",
+		"prettier": "^3.1.0",
+		"typescript": "^5.3.2"
+	}
+}
